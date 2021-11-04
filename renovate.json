@@ -22,7 +22,10 @@
       "matchPaths": [
 	".github/workflows/**"
       ],
-      "groupName": "Github Actions",
+      "groupName": "github-workflows",
+      "group": {
+        "branchTopic": "github-workflows"
+      },
       "semanticCommitType": "ci"
     },
     {
