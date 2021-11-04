@@ -28,10 +28,24 @@
     },
     {
       "matchPaths": [
-	"charts/**"
+	"charts/kroki/**"
       ],
-      "groupName": "charts",
-      "semanticCommitScope": "{{parentDir}}"
+      "groupName": "kroki",
+      "semanticCommitScope": "kroki"
+    },
+    {
+      "matchPaths": [
+	"charts/kubebox/**"
+      ],
+      "groupName": "kubebox",
+      "semanticCommitScope": "kubebox"
+    },
+    {
+      "matchPaths": [
+	"charts/kubeview/**"
+      ],
+      "groupName": "kubeview",
+      "semanticCommitScope": "kubeview"
     },
     {
       "matchPackageNames": [
