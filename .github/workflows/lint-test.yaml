@@ -18,7 +18,7 @@ jobs:
           - v3.7.0 # renovate: helm
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v2.3.0
         with:
           fetch-depth: 0
 
@@ -62,7 +62,7 @@ jobs:
           - v1.22.0 # renovate: kindest/node
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v2.3.0
         with:
           fetch-depth: 0
 
@@ -99,7 +99,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@v2.3.0
         with:
           fetch-depth: 0
 
