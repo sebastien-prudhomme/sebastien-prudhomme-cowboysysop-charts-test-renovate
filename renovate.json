@@ -17,16 +17,12 @@
   },
   "semanticCommits": "enabled",
   "semanticCommitScope": null,
-  "separateMajorMinor": false,
   "packageRules": [
     {
       "matchPaths": [
 	".github/workflows/**"
       ],
       "groupName": "github workflows",
-      "group": {
-        "branchTopic": "github-workflows"
-      },
       "semanticCommitType": "ci"
     },
     {
