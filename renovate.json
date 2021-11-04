@@ -48,6 +48,41 @@
       "semanticCommitScope": "kubeview"
     },
     {
+      "matchPaths": [
+	"charts/lighthouse-ci/**"
+      ],
+      "groupName": "lighthouse-ci",
+      "semanticCommitScope": "lighthouse-ci"
+    },
+    {
+      "matchPaths": [
+	"charts/mongo-express/**"
+      ],
+      "groupName": "mongo-express",
+      "semanticCommitScope": "mongo-express"
+    },
+    {
+      "matchPaths": [
+	"charts/mpi-operator/**"
+      ],
+      "groupName": "mpi-operator",
+      "semanticCommitScope": "mpi-operator"
+    },
+    {
+      "matchPaths": [
+	"charts/notebook-controller/**"
+      ],
+      "groupName": "notebook-controller",
+      "semanticCommitScope": "notebook-controller"
+    },
+    {
+      "matchPaths": [
+	"charts/quickchart/**"
+      ],
+      "groupName": "quickchart",
+      "semanticCommitScope": "quickchart"
+    },
+    {
       "matchPackageNames": [
 	"helm",
         "kindest/node"
