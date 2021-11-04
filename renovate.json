@@ -17,6 +17,7 @@
   },
   "semanticCommits": "enabled",
   "semanticCommitScope": null,
+  "separateMajorMinor": false,
   "packageRules": [
     {
       "matchPaths": [
