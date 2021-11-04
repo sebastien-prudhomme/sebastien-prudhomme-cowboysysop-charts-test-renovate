@@ -14,7 +14,7 @@ jobs:
           - v3.3.0 # renovate: helm
           - v3.4.0 # renovate: helm
           - v3.5.0 # renovate: helm
-          - v3.6.0 # renovate: helm
+          - v3.6.1 # renovate: helm
           - v3.7.0 # renovate: helm
     steps:
       - name: Checkout
