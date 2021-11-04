@@ -1,7 +1,8 @@
 {
   "dependencyDashboard": true,
   "includePaths": [
-    ".github/workflows/**"
+    ".github/workflows/**",
+    "charts/**"
   ],
   "major": {
     "bumpVersion": "major",
@@ -24,6 +25,13 @@
       ],
       "groupName": "github workflows",
       "semanticCommitType": "ci"
+    },
+    {
+      "matchPaths": [
+	"charts/**"
+      ],
+      "groupName": "charts",
+      "semanticCommitScope": "{{parentDir}}"
     },
     {
       "matchPackageNames": [
