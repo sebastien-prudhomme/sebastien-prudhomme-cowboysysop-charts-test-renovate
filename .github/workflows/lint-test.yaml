@@ -14,11 +14,11 @@ jobs:
           - v3.3.0 # renovate: helm
           - v3.4.0 # renovate: helm
           - v3.5.0 # renovate: helm
-          - v3.6.0 # renovate: helm
+          - v3.6.1 # renovate: helm
           - v3.7.0 # renovate: helm
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@v2.3.0
         with:
           fetch-depth: 0
 
@@ -28,7 +28,7 @@ jobs:
           version: ${{ matrix.helm }}
 
       - name: Set up Python
-        uses: actions/setup-python@v2.0.0
+        uses: actions/setup-python@v2.2.0
         with:
           python-version: 3.7.5 # renovate: python
 
@@ -62,7 +62,7 @@ jobs:
           - v1.22.0 # renovate: kindest/node
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@v2.3.0
         with:
           fetch-depth: 0
 
@@ -72,7 +72,7 @@ jobs:
           version: v3.7.0 # renovate: helm
 
       - name: Set up Python
-        uses: actions/setup-python@v2.0.0
+        uses: actions/setup-python@v2.2.0
         with:
           python-version: 3.7.5 # renovate: python
 
@@ -99,7 +99,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@v2.3.0
         with:
           fetch-depth: 0
 
