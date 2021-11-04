@@ -83,6 +83,27 @@
       "semanticCommitScope": "quickchart"
     },
     {
+      "matchPaths": [
+	"charts/training-operator/**"
+      ],
+      "groupName": "training-operator",
+      "semanticCommitScope": "training-operator"
+    },
+    {
+      "matchPaths": [
+	"charts/vertical-pod-autoscaler/**"
+      ],
+      "groupName": "vertical-pod-autoscaler",
+      "semanticCommitScope": "vertical-pod-autoscaler"
+    },
+    {
+      "matchPaths": [
+	"charts/whoami/**"
+      ],
+      "groupName": "whoami",
+      "semanticCommitScope": "whoami"
+    },
+    {
       "matchPackageNames": [
 	"helm",
         "kindest/node"
