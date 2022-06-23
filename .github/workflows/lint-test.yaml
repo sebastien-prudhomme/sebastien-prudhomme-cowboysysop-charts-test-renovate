@@ -17,7 +17,7 @@ jobs:
           - v3.7.1 # renovate: helm
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v2.4.2
         with:
           fetch-depth: 0
 
@@ -27,12 +27,12 @@ jobs:
           version: ${{ matrix.helm }}
 
       - name: Set up Python
-        uses: actions/setup-python@v2.2.2
+        uses: actions/setup-python@v2.3.2
         with:
-          python-version: 3.10.0 # renovate: python
+          python-version: 3.10.5 # renovate: python
 
       - name: Set up chart-testing
-        uses: helm/chart-testing-action@v2.1.0
+        uses: helm/chart-testing-action@v2.2.1
 
       - name: Run chart-testing (list-changed)
         id: list-changed
@@ -61,7 +61,7 @@ jobs:
           - v1.22.2 # renovate: kindest/node
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v2.4.2
         with:
           fetch-depth: 0
 
@@ -71,12 +71,12 @@ jobs:
           version: v3.7.1 # renovate: helm
 
       - name: Set up Python
-        uses: actions/setup-python@v2.2.2
+        uses: actions/setup-python@v2.3.2
         with:
-          python-version: 3.10.0 # renovate: python
+          python-version: 3.10.5 # renovate: python
 
       - name: Set up chart-testing
-        uses: helm/chart-testing-action@v2.1.0
+        uses: helm/chart-testing-action@v2.2.1
 
       - name: Run chart-testing (list-changed)
         id: list-changed
@@ -87,7 +87,7 @@ jobs:
           fi
 
       - name: Create kind cluster
-        uses: helm/kind-action@v1.2.0
+        uses: helm/kind-action@v1.3.0
         if: steps.list-changed.outputs.changed == 'true'
         with:
           node_image: kindest/node:${{ matrix.kubernetes }}
@@ -98,11 +98,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v2.4.2
         with:
           fetch-depth: 0
 
       - name: Run Checkov
-        uses: bridgecrewio/checkov-action@v12.1002.0
+        uses: bridgecrewio/checkov-action@v12.1638.0
         with:
           config_file: checkov.yaml
